@@ -64,7 +64,6 @@ class ItemBasedCollabFiltering:
         # Select the movies with max score
         top_recommendations = top_recommendations.sort_values('score', ascending=False)
         print top_recommendations.head(n=10)
-        print top_recommendations.loc[user_watched_movies]
 
 
 pd.options.display.max_colwidth = 40
